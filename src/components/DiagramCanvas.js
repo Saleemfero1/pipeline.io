@@ -364,7 +364,7 @@ const DiagramCanvas = ({ selectedNode, setSelectedNode, setDiagramData, isLocked
       window.addEventListener('mousemove', handleMouseMove);
       return () => window.removeEventListener('mousemove', handleMouseMove);
     }
-  }, [isDragging, isResizing, isConnecting, isMovingLineEndpoint, isPanning, dragStart, resizeHandle, connectionStart, lineEndpointBeingMoved, pan, zoomLevel, isLocked]);
+  }, [isDragging, isResizing, isConnecting, isMovingLineEndpoint, isPanning, dragStart, resizeHandle, connectionStart, lineEndpointBeingMoved, pan, zoomLevel, isLocked, selectedNode, setSelectedNode]);
 
   // Handle mouse up
   useEffect(() => {

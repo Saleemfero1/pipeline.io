@@ -225,9 +225,6 @@ export const renderShape = (node, onMouseDown, onDoubleClick = null) => {
   const textElement = text ? (() => {
     const fontSize = Math.max(10, Math.min(16, Math.min(width, height) / 6));
     const lines = text.split('\n'); // Keep all lines including empty ones and spaces
-    const lineHeight = fontSize * 1.2;
-    const totalTextHeight = lines.length * lineHeight;
-    const startY = y + height / 2 - (totalTextHeight / 2) + (fontSize / 2);
     
     // Calculate max width per line (with padding)
     const maxLineWidth = width * 0.9;
