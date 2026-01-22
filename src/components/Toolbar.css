@@ -1,0 +1,84 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2d2d2d;
+  border-bottom: 1px solid #404040;
+  height: 50px;
+}
+
+.toolbar-left {
+  flex: 1;
+}
+
+.toolbar-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.toolbar-center {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toolbar-right {
+  display: flex;
+  gap: 10px;
+}
+
+.toolbar-btn {
+  background-color: #404040;
+  border: 1px solid #555555;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.toolbar-btn:hover {
+  background-color: #505050;
+}
+
+.toolbar-btn.active {
+  background-color: #0066cc;
+  border-color: #0080ff;
+}
+
+.zoom-level {
+  min-width: 60px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.delete-btn {
+  background-color: #cc0000;
+  border-color: #ff0000;
+}
+
+.delete-btn:hover:not(.disabled) {
+  background-color: #ff0000;
+}
+
+.delete-btn.disabled {
+  background-color: #404040;
+  border-color: #555555;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.export-btn {
+  background-color: #0066cc;
+  border-color: #0080ff;
+}
+
+.export-btn:hover {
+  background-color: #0080ff;
+}
+
